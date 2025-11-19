@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Github, Linkedin, Mail } from "lucide-react";
+import { ArrowRight, Github, Linkedin, Mail, Download } from "lucide-react";
 
 export default function Hero() {
     return (
@@ -50,6 +50,16 @@ export default function Hero() {
                             onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}
                         >
                             Contact Me
+                        </Button>
+                        <Button
+                            variant="outline"
+                            size="lg"
+                            className="rounded-full text-base px-8"
+                            asChild
+                        >
+                            <a href="/KuramChanduNewCV.pdf" download="Kuram_Chandu_Resume.pdf">
+                                Download Resume <Download className="ml-2 h-4 w-4" />
+                            </a>
                         </Button>
                     </div>
 
