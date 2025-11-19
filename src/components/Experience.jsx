@@ -16,7 +16,7 @@ const experience = [
 
 const education = [
     {
-        degree: "Bachelor of Technology, IT",
+        degree: "Bachelor of Technology, ITE",
         school: "Malla Reddy College of Engineering",
         location: "Hyderabad, Telangana",
         period: "Graduated"

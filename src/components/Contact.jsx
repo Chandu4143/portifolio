@@ -23,13 +23,17 @@ export default function Contact() {
                     </p>
 
                     <div className="flex flex-col md:flex-row gap-4 justify-center items-center pt-8">
-                        <Button size="lg" className="rounded-full text-lg px-8 h-14">
-                            <Mail className="mr-2 h-5 w-5" />
-                            kuramchandu4143@gmail.com
-                        </Button>
-                        <Button variant="outline" size="lg" className="rounded-full text-lg px-8 h-14">
-                            +91 7075663555
-                        </Button>
+                        <a href="mailto:kuramchandu4143@gmail.com">
+                            <Button size="lg" className="rounded-full text-lg px-8 h-14">
+                                <Mail className="mr-2 h-5 w-5" />
+                                kuramchandu4143@gmail.com
+                            </Button>
+                        </a>
+                        <a href="tel:+917075663555">
+                            <Button variant="outline" size="lg" className="rounded-full text-lg px-8 h-14">
+                                +91 7075663555
+                            </Button>
+                        </a>
                     </div>
 
                     <div className="flex gap-8 justify-center pt-16">

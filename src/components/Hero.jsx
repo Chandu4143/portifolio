@@ -21,18 +21,34 @@ export default function Hero() {
                     <div className="inline-block px-3 py-1 rounded-full bg-secondary/50 border border-secondary text-sm text-secondary-foreground mb-4">
                         Available for work
                     </div>
-                    <h1 className="text-5xl md:text-7xl font-bold tracking-tight leading-tight">
-                        Hey, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-500">Chandu</span>
-                    </h1>
+
+                    <motion.h1
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8, ease: "easeOut" }}
+                        className="text-5xl md:text-7xl font-bold tracking-tight leading-tight text-transparent bg-clip-text bg-gradient-to-r from-gray-900 to-gray-600 dark:from-white dark:to-gray-400 mb-6"
+                    >
+                        Hey, I'm Chandu
+                    </motion.h1>
+
                     <p className="text-xl md:text-2xl text-muted-foreground max-w-lg mx-auto md:mx-0">
                         Full-Stack Developer crafting premium digital experiences with modern technologies.
                     </p>
 
                     <div className="flex flex-wrap gap-4 justify-center md:justify-start pt-4">
-                        <Button size="lg" className="rounded-full text-base px-8">
+                        <Button
+                            size="lg"
+                            className="rounded-full text-base px-8"
+                            onClick={() => document.getElementById('projects').scrollIntoView({ behavior: 'smooth' })}
+                        >
                             View Projects <ArrowRight className="ml-2 h-4 w-4" />
                         </Button>
-                        <Button variant="outline" size="lg" className="rounded-full text-base px-8">
+                        <Button
+                            variant="outline"
+                            size="lg"
+                            className="rounded-full text-base px-8"
+                            onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}
+                        >
                             Contact Me
                         </Button>
                     </div>
